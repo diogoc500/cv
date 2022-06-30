@@ -1,0 +1,150 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5625rem; /*25px;*/
+}
+
+h1{
+  margin-top: 0;
+  width: 30%;
+  margin: auto;
+  font-size: 5.625rem;
+  color: #66BFBF;
+}
+
+h2{
+  color: #66BFBF;
+}
+
+h3{
+  color: #11999E;
+}
+
+a{
+  color: #11999E;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+hr{
+  border-style: none;
+  border-top: 10px dotted lightgrey;
+  width: 10%;
+}
+
+.contact_button {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 20px 40px 20px 40px;
+  text-decoration: none;
+}
+
+.coiso{
+  padding: 50px;
+}
+
+.contact_button:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.h_img{
+  height: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+
+
+.top-container{
+  background-color: #E4F9F5;
+  padding-top: 100px;
+  max-width: none;
+}
+
+.skills{
+  padding: 100px 0;
+}
+
+.profile{
+  padding: 100px 0;
+}
+
+.profile_desc{
+  margin: 0 auto;
+  width: 50%;
+}
+
+.top_cloud{
+  margin: 0 auto;
+  position: absolute;
+  right: 5rem;
+}
+
+.bot_cloud{
+  position: absolute;
+  left: 5rem;
+}
+
+.mountain-img{
+  margin: 0 auto;
+  display: block;
+}
+
+.profile_pic_1{
+  height: 170px;
+}
+
+.contact_me{
+  padding: 100px 0;
+}
+
+.contact_button{
+  height: auto;
+  width: 200px;
+  padding: 10px 20px;
+  background-color: #66BFBF;
+}
+
+.contact_bar{
+  background-color: #66BFBF;
+  padding: 20px;
+}
+
+.footer-link{
+  margin-left: 40px;
+}
+
+.at_sign{
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+.skill-row{
+  height: 200px;
+  margin: 100px auto;
+  width: 40%;
+  text-align: center;
+}
+
+.skill_text{
+  transform: translateY(50%);
+}
