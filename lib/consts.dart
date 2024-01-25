@@ -1,9 +1,15 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, avoid_print
 
-import 'package:flutter/material.dart';
+const bool kIsDebugMode = true;
+void dprint(dynamic message) {
+  if (kIsDebugMode) {
+    print(message);
+  }
+}
 
-const String kMaterialAppTitle = "Diogo Costa CV Website";
+const String kMaterialAppTitle = "Diogo Costa CV";
 
-final AppBar kAppBar = AppBar(
-  title: Text("Diogo Costa"),
-);
+// ===== Title Section =====
+const double kTitleSectionHeight = 700.0;
+const double kTitleSectionBGIOpacity = 0.2;
+const double kTitleSectionAvatarRadius = 150.0;
