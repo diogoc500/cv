@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
 
       _scrollController.animateTo(
         offset,
-        duration: Duration(seconds: 1),
+        duration: const Duration(seconds: 1),
         curve: Curves.easeInOut,
       );
     };
@@ -92,8 +92,8 @@ class HomePage extends StatelessWidget {
           ),
           // Experience Section
           SectionAction(
-            iconData: kAboutSectionIconData,
-            onPressed: _scrollToSection(aboutSection.sectionKey),
+            iconData: kExperienceSectionIconData,
+            onPressed: _scrollToSection(experienceSection.sectionKey),
           ),
         ],
       ),

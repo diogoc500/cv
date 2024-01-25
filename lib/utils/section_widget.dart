@@ -42,6 +42,11 @@ class Section extends StatelessWidget {
                 iconData: iconData,
                 title: titleString,
               ),
+              SizedBox(
+                height: 20.0,
+                width: getScreenWidth(context) * 0.2,
+                child: const Divider(color: Colors.white38),
+              ),
               const SizedBox(height: 10.0),
               child
             ],

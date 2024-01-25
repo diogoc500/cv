@@ -4,18 +4,32 @@ class SectionTitle extends StatelessWidget {
   final IconData iconData;
   final String title;
 
-  const SectionTitle({super.key, required this.iconData, required this.title});
+  final double? iconSize;
+  final double distance;
+  final double fontSize;
+
+  const SectionTitle({
+    super.key,
+    required this.iconData,
+    required this.title,
+    this.iconSize,
+    this.distance = 5.0,
+    this.fontSize = 25.0,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(iconData),
-        const SizedBox(width: 5.0),
+        Icon(
+          iconData,
+          size: iconSize,
+        ),
+        SizedBox(width: distance),
         Text(
           title,
-          style: const TextStyle(fontSize: 25.0),
+          style: TextStyle(fontSize: fontSize),
         ),
       ],
     );

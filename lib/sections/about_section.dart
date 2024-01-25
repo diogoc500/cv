@@ -18,11 +18,27 @@ class AboutSection extends StatelessWidget with SectionWidget {
       iconData: kAboutSectionIconData,
       titleString: kAboutSectionTitleString,
       backgroundColor: kAboutSectionBackgroundColor,
-      child: Text(
-        kAboutSectionText,
-        textAlign: TextAlign.justify,
-        style: TextStyle(fontSize: 18.0),
+      child: Column(
+        children: [
+          TextBlock(text: kAboutSectionDescription),
+          SizedBox(height: 20.0),
+          TextBlock(text: kAboutSectionLanguages),
+        ],
       ),
+    );
+  }
+}
+
+class TextBlock extends StatelessWidget {
+  final String text;
+  const TextBlock({super.key, required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      textAlign: TextAlign.justify,
+      style: TextStyle(fontSize: 18.0),
     );
   }
 }
