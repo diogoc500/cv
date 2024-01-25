@@ -1,9 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:cv_website/sections/section.dart';
+import 'package:cv_website/sections/section_mixin.dart';
 import 'package:flutter/material.dart';
 
 import '../consts.dart';
+import '../utils/utils.dart';
 
 class TitleSection extends StatelessWidget with SectionWidget {
   TitleSection({super.key}) {
@@ -14,7 +15,7 @@ class TitleSection extends StatelessWidget with SectionWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       key: sectionKey,
-      height: kTitleSectionHeight,
+      height: getScreenHeight(context) * kTitleSectionHeightFactor,
       child: Stack(
         children: [
           Opacity(
@@ -28,7 +29,9 @@ class TitleSection extends StatelessWidget with SectionWidget {
           ),
           Center(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 100.0),
+              padding: EdgeInsets.symmetric(
+                  horizontal:
+                      getScreenWidth(context) * kHorizontalPaddingFactor),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.center,

@@ -1,4 +1,4 @@
-import 'package:cv_website/sections/section.dart';
+import 'package:cv_website/sections/section_mixin.dart';
 import 'package:flutter/cupertino.dart';
 
 class SkillsSection extends StatelessWidget with SectionWidget {
