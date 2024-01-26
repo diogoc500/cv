@@ -6,6 +6,7 @@ const bool kIsDebugMode = true;
 
 const String kMaterialAppTitle = "Diogo Costa CV";
 const double kHorizontalPaddingFactor = 0.2;
+const double kVerticalPadding = 100.0;
 
 const ColorScheme kColorScheme = ColorScheme.dark();
 
@@ -44,4 +45,11 @@ const IconData kExperienceSectionIconData = Icons.work;
 const String kExperienceSectionTitleString = "Experience";
 final Color kExperienceSectionBackgroundColor = kColorScheme.onPrimary;
 
-// =====
+// ===== Skills Section =====
+const double kSkillsSectionHeightFactor = 0.6;
+const IconData kSkillsSectionIconData = Icons.code;
+const String kSkillsSectionTitleString = "Skills";
+final Color kSkillsSectionBackgroundColor = kColorScheme.background;
+const double kSkillsSectionTableFontSize = 20.0;
+const double kSkillsSectionSkillCellWidth = kSkillsSectionTableFontSize * 10;
+const double kSkillsSectionSkillCellPadding = 8.0;

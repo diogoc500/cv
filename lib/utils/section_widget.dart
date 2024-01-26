@@ -29,12 +29,13 @@ class Section extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       key: sectionKey,
-      height: getScreenHeight(context) * heightFactor,
       color: backgroundColor,
       child: Center(
         child: Padding(
           padding: EdgeInsets.symmetric(
-              horizontal: getScreenWidth(context) * kHorizontalPaddingFactor),
+            horizontal: getScreenWidth(context) * kHorizontalPaddingFactor,
+            vertical: kVerticalPadding,
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

@@ -22,7 +22,9 @@ class MyApp extends StatelessWidget {
         colorScheme: kColorScheme,
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: SelectionArea(
+        child: HomePage(),
+      ),
     );
   }
 }
