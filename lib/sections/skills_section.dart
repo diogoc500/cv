@@ -60,7 +60,6 @@ class SkillsSection extends StatelessWidget with SectionWidget {
   Widget build(BuildContext context) {
     return Section(
       sectionKey: sectionKey,
-      heightFactor: kSkillsSectionHeightFactor,
       iconData: kSkillsSectionIconData,
       titleString: kSkillsSectionTitleString,
       backgroundColor: kSkillsSectionBackgroundColor,

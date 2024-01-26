@@ -69,7 +69,6 @@ class ExperienceSection extends StatelessWidget with SectionWidget {
   Widget build(BuildContext context) {
     return Section(
       sectionKey: sectionKey,
-      heightFactor: kExperienceSectionHeightFactor,
       iconData: kExperienceSectionIconData,
       titleString: kExperienceSectionTitleString,
       backgroundColor: kExperienceSectionBackgroundColor,

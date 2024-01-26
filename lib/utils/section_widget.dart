@@ -7,7 +7,6 @@ import '../consts.dart';
 class Section extends StatelessWidget {
   final GlobalKey sectionKey;
 
-  final double heightFactor;
   final IconData iconData;
   final String titleString;
 
@@ -18,7 +17,6 @@ class Section extends StatelessWidget {
   const Section({
     super.key,
     required this.sectionKey,
-    required this.heightFactor,
     required this.iconData,
     required this.titleString,
     required this.backgroundColor,

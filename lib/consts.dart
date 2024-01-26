@@ -40,16 +40,20 @@ const String kAboutSectionLanguages =
     "I'm a native Portuguese speaker, but can also speak English. I've been learning Dutch and German in my spare time.";
 
 // ===== Experience Section =====
-const double kExperienceSectionHeightFactor = 0.6;
 const IconData kExperienceSectionIconData = Icons.work;
 const String kExperienceSectionTitleString = "Experience";
 final Color kExperienceSectionBackgroundColor = kColorScheme.onPrimary;
 
 // ===== Skills Section =====
-const double kSkillsSectionHeightFactor = 0.6;
 const IconData kSkillsSectionIconData = Icons.code;
 const String kSkillsSectionTitleString = "Skills";
 final Color kSkillsSectionBackgroundColor = kColorScheme.background;
 const double kSkillsSectionTableFontSize = 20.0;
 const double kSkillsSectionSkillCellWidth = kSkillsSectionTableFontSize * 10;
 const double kSkillsSectionSkillCellPadding = 8.0;
+
+// ===== Contact Section =====
+const IconData kContactSectionIconData = Icons.email;
+const String kContactSectionTitleString = "Contact";
+final Color kContactSectionBackgroundColor = kColorScheme.onPrimary;
+const double kContactSectionContactIconSize = 80.0;

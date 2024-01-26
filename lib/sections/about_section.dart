@@ -14,7 +14,6 @@ class AboutSection extends StatelessWidget with SectionWidget {
   Widget build(BuildContext context) {
     return Section(
       sectionKey: sectionKey,
-      heightFactor: kAboutSectionHeightFactor,
       iconData: kAboutSectionIconData,
       titleString: kAboutSectionTitleString,
       backgroundColor: kAboutSectionBackgroundColor,

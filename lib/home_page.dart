@@ -95,6 +95,16 @@ class HomePage extends StatelessWidget {
             iconData: kExperienceSectionIconData,
             onPressed: _scrollToSection(experienceSection.sectionKey),
           ),
+          // Skills Section
+          SectionAction(
+            iconData: kSkillsSectionIconData,
+            onPressed: _scrollToSection(skillsSection.sectionKey),
+          ),
+          // Contact Section
+          SectionAction(
+            iconData: kContactSectionIconData,
+            onPressed: _scrollToSection(contactSection.sectionKey),
+          ),
         ],
       ),
       body: Stack(
