@@ -11,11 +11,14 @@ fi
 
 flutter clean
 git add .
-git commit -m "Deploy push."
+git commit -m "Deployment push."
 git push
 
-git checkout deploy
+git checkout production
 git merge development
+flutter build web --release
+git add .
+git commit -m "Deployment push."
 git push
 
 git checkout development
