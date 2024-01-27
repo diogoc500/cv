@@ -31,7 +31,10 @@ class Section extends StatelessWidget {
       child: Center(
         child: Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: getScreenWidth(context) * kHorizontalPaddingFactor,
+            horizontal: getScreenWidth(context) *
+                (isMobileView(context)
+                    ? kHorizontalPaddingFactorMobile
+                    : kHorizontalPaddingFactorDefault),
             vertical: kVerticalPadding,
           ),
           child: Column(

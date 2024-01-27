@@ -15,3 +15,7 @@ double getScreenHeight(BuildContext context) {
 double getScreenWidth(BuildContext context) {
   return MediaQuery.of(context).size.width;
 }
+
+bool isMobileView(BuildContext context) {
+  return getScreenWidth(context) < 1048.0;
+}

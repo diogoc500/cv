@@ -78,7 +78,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Diogo Costa"),
-        centerTitle: true,
+        centerTitle: !isMobileView(context),
         actions: <Widget>[
           // Title Section
           SectionAction(

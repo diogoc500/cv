@@ -9,6 +9,10 @@ void main() {
   runApp(const MyApp());
 }
 
+// TODO: Lower the resolution of the images used.
+// TODO: Solve the 'scroll offset' bug.
+// TODO: Do mobile view.
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

@@ -3,6 +3,8 @@ import 'package:cv_website/sections/section_mixin.dart';
 import 'package:cv_website/utils/section_widget.dart';
 import 'package:flutter/material.dart';
 
+import '../utils/utils.dart';
+
 class SkillsSection extends StatelessWidget with SectionWidget {
   static const int _skillsPerRow = 2;
 
@@ -70,8 +72,11 @@ class SkillsSection extends StatelessWidget with SectionWidget {
               color: Colors.grey,
             ),
           ),
-          defaultColumnWidth:
-              const FixedColumnWidth(kSkillsSectionSkillCellWidth),
+          defaultColumnWidth: FixedColumnWidth(
+            isMobileView(context)
+                ? kSkillsSectionSkillCellWidthMobile
+                : kSkillsSectionSkillCellWidthDefault,
+          ),
           children: _tableRows),
     );
   }
@@ -84,11 +89,19 @@ class SkillCell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(kSkillsSectionSkillCellPadding),
+      padding: EdgeInsets.all(
+        isMobileView(context)
+            ? kSkillsSectionSkillCellPaddingMobile
+            : kSkillsSectionSkillCellPaddingDefault,
+      ),
       child: Text(
         skill,
         textAlign: TextAlign.center,
-        style: const TextStyle(fontSize: kSkillsSectionTableFontSize),
+        style: TextStyle(
+          fontSize: isMobileView(context)
+              ? kSkillsSectionTableFontSizeMobile
+              : kSkillsSectionTableFontSizeDefault,
+        ),
       ),
     );
   }
