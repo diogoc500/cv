@@ -10,8 +10,12 @@ if [ "$current_branch" -ne "$desired_branch" ]; then
 fi
 
 flutter clean
+git add .
 git commit -m "Deploy push."
 git push
 
 git checkout deploy
 git merge development
+git push
+
+git checkout development

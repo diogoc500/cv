@@ -69,7 +69,7 @@ class ContactSection extends StatelessWidget with SectionWidget {
               // LinkedIn
               Contact(
                 iconData: FontAwesomeIcons.linkedin,
-                label: "LinkedIn",
+                label: "Link",
                 onPressed: linkedinAction,
               ),
             ],
