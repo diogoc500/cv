@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
-
-import '../consts.dart';
+import 'package:flutter/foundation.dart';
 
 void dprint(dynamic message) {
-  if (kIsDebugMode) {
+  if (!kReleaseMode) {
     // ignore: avoid_print
     print(message);
   }
