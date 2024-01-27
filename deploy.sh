@@ -19,7 +19,7 @@ git push
 git checkout production
 rm -r docs
 git merge development
-flutter build web --release
+flutter build web --release --web-renderer html --base-href /cv/
 mv build/web docs
 git add .
 git commit -m "Deployment push."
