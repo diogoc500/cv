@@ -20,7 +20,7 @@ git checkout production
 rm -r docs
 git merge development
 flutter build web --release
-mv web docs
+mv build/web docs
 git add .
 git commit -m "Deployment push."
 git push
