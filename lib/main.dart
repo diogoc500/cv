@@ -11,7 +11,7 @@ void main() {
 
 // TODO: Lower the resolution of the images used.
 // TODO: Solve the 'scroll offset' bug.
-// TODO: Do mobile view.
+// TODO: Put every dangling value into a variable in consts.
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

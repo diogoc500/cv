@@ -141,7 +141,7 @@ class _TitleSectionMobile extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(height: 10.0),
+                  SizedBox(height: 5.0),
                   CircleAvatar(
                     radius: kTitleSectionAvatarRadius,
                     backgroundImage: AssetImage("assets/images/photo.png"),
