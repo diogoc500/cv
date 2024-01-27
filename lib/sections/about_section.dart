@@ -3,6 +3,7 @@
 import 'package:cv_website/consts.dart';
 import 'package:cv_website/sections/section_mixin.dart';
 import 'package:cv_website/utils/section_widget.dart';
+import 'package:cv_website/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 class AboutSection extends StatelessWidget with SectionWidget {
@@ -36,7 +37,7 @@ class TextBlock extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      textAlign: TextAlign.justify,
+      textAlign: isMobileView(context) ? TextAlign.center : TextAlign.justify,
       style: TextStyle(fontSize: 18.0),
     );
   }
