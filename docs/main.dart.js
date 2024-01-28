@@ -35873,7 +35873,7 @@ A.LI.prototype={
 I(a){var s,r=null,q=t.w,p=A.aY(a,r,q).w,o=A.Vk(A.ad0("assets/images/bin_code.png",B.fB,1/0,1/0),0.2)
 q=A.aY(a,r,q).w.a.a*0.2
 s=t.p
-return new A.ca(r,p.a.b*0.85,A.m7(B.cq,A.a([o,A.f2(new A.ct(new A.aO(q,50,q,50),A.fW(A.a([A.fW(A.a([A.ds("Hi! I'm",r,A.e5(r,r,r,r,r,r,r,r,r,r,r,50,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r),A.ds("Diogo",r,A.e5(r,r,r,r,r,r,r,r,r,r,r,80,r,r,B.bA,r,r,!0,r,r,r,r,r,r,r,r),r),A.ds("<A Computer Engineering Student/>",r,A.e5(r,r,B.u,r,r,r,r,r,r,r,r,20,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.bs)],s),B.a4,B.d2,B.al),new A.ca(r,5,r,r),A.abV(new A.kx("assets/images/photo.png",r,r),150)],s),B.a4,B.d2,B.al),r),r,r)],s),B.aj,B.bN),this.c)}}
+return new A.ca(r,p.a.b*0.85,A.m7(B.cq,A.a([o,A.f2(new A.ct(new A.aO(q,50,q,50),A.fW(A.a([A.fW(A.a([A.ds("Hi! I'm",r,A.e5(r,r,r,r,r,r,r,r,r,r,r,50,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r),A.ds("Diogo",r,A.e5(r,r,r,r,r,r,r,r,r,r,r,80,r,r,B.bA,r,r,!0,r,r,r,r,r,r,r,r),r),A.ds("<Computer Engineering Student/>",r,A.e5(r,r,B.u,r,r,r,r,r,r,r,r,20,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.bs)],s),B.a4,B.d2,B.al),new A.ca(r,5,r,r),A.abV(new A.kx("assets/images/photo.png",r,r),150)],s),B.a4,B.d2,B.al),r),r,r)],s),B.aj,B.bN),this.c)}}
 A.LJ.prototype={}
 A.uL.prototype={
 I(a){var s=this,r=null
