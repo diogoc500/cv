@@ -132,7 +132,7 @@ class _TitleSectionMobile extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        "<A Computer Engineering Student/>",
+                        "<Computer Engineering Student/>",
                         style: TextStyle(
                           fontSize: 20.0,
                           color: Colors.white70,
