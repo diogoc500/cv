@@ -78,7 +78,7 @@ class HomePage extends StatelessWidget {
 
   void openCv() {
     if (kIsWeb) {
-      String pdfUrl = 'assets/cv.pdf';
+      String pdfUrl = 'assets/assets/cv.pdf';
       html.window.open(pdfUrl, '_blank');
     }
   }
