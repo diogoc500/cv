@@ -1,3 +1,5 @@
+import 'dart:html' as html show window;
+
 import 'package:cv_website/sections/about_section.dart';
 import 'package:cv_website/sections/contact_section.dart';
 import 'package:cv_website/sections/experience_section.dart';
@@ -5,6 +7,7 @@ import 'package:cv_website/sections/section_mixin.dart';
 import 'package:cv_website/sections/skills_section.dart';
 import 'package:cv_website/sections/title_section.dart';
 import 'package:cv_website/utils/utils.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'consts.dart';
@@ -73,11 +76,18 @@ class HomePage extends StatelessWidget {
     };
   }
 
+  void openCv() {
+    if (kIsWeb) {
+      String pdfUrl = 'assets/cv.pdf';
+      html.window.open(pdfUrl, '_blank');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Diogo Costa"),
+        title: Text(isMobileView(context) ? "DC" : "Diogo Costa"),
         centerTitle: !isMobileView(context),
         actions: <Widget>[
           // Title Section
@@ -105,6 +115,8 @@ class HomePage extends StatelessWidget {
             iconData: kContactSectionIconData,
             onPressed: _scrollToSection(contactSection.sectionKey),
           ),
+          // Download CV Button
+          TextButton(onPressed: openCv, child: Text("Download CV")),
         ],
       ),
       body: Stack(
