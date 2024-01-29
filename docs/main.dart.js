@@ -36897,7 +36897,7 @@ q===$&&A.c()
 if(q===a)break
 s+=p.$1(q)}return s},
 o_(a){return new A.UK(this,a)},
-a54(){var s=window.open("assets/cv.pdf","_blank")
+a54(){var s=window.open("assets/assets/cv.pdf","_blank")
 A.arR(s)},
 I(a){var s,r,q,p,o,n,m=this,l=null,k=t.w,j=A.dg(A.b1(a,l,k).w.a.a<1048?"DC":"Diogo Costa",l,l,l)
 k=A.b1(a,l,k).w
